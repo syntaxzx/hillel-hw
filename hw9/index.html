@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="#" class="active">All Plants</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+            <div class="sorting">
+                <label for="sorting">Short by:</label>
+                <select id="sorting">
+                    <option value="default">Default sorting</option>
+                    <option value="price">Price</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+
+            <div class="plant-card-wrapper">
+                <div class="plant-card hoverable">
+                    <div class="hover-border"></div>
+                    <img src="images/barberton.png" alt="Barberton Daisy">
+                    <div class="hover-icons">
+                        <span class="icon">🛒</span>
+                        <span class="icon">❤️</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <p class="plant-name">Barberton Daisy</p>
+                <p class="price">$119.00</p>
+            </div>
+
+            <div class="plant-card-wrapper">
+                <div class="plant-card hoverable">
+                    <div class="hover-border"></div>
+                    <img src="images/angelwing.jpg" alt="Angel Wing Begonia">
+                    <div class="hover-icons">
+                        <span class="icon">🛒</span>
+                        <span class="icon">❤️</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                </div>
+                <p class="plant-name">Angel Wing Begonia</p>
+                <p class="price">$169.00</p>
+            </div>
+
+            <div class="plant-card-wrapper">
+                <div class="plant-card hoverable">
+                    <div class="hover-border"></div>
+                    <img src="images/trends.png" alt="African Violet">
+                    <div class="hover-icons">
+                        <span class="icon">🛒</span>
+                        <span class="icon">❤️</span>
+                        <span class="icon">🔍</span>
+                    </div>
+                    <span class="discount-tag">13% OFF</span>
+                </div>
+                <p class="plant-name">African Violet</p>
+                <p class="price"><span class="discount">$229.00</span> $199.00</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
