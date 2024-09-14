@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'CeraPro-Black';
+    src: url('../fonts/CeraPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanged Letters';
+    src: url('../fonts/HangedLetters.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CeraPro-Light', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Стили боковой панели с категориями */
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    justify-content: flex-start; /* Элементы идут сверху вниз */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories li {
+    margin-bottom: 15px;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.categories a:hover {
+    color: green;
+}
+
+/* Стили основной части */
+.main-content {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters a {
+    text-decoration: none;
+    color: green;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.filters a.active {
+    border-bottom: 2px solid green;
+}
+
+.filters select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Сетка с растениями */
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 20px; /* Промежуток между карточками */
+}
+
+.plant-card {
+    background-color: #f9f9f9;
+    padding: 5px; /* Оставляем уменьшенные отступы */
+    border: 1px solid #eee;
+    text-align: center;
+    box-sizing: border-box; /* Для учета padding в ширине элемента */
+}
+
+.plant-card img {
+    width: 80px; /* Подстроим размеры изображений */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.plant-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.plant-card span {
+    color: green;
+    font-weight: bold;
+}
+
+/* Стили для баннера распродажи */
+.sale-banner {
+    margin-top: 20px; /* Отступ сверху для отделения от категорий */
+    padding: 10px;
+    background-color: #f0fff0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.sale-banner h2 {
+    font-family: 'Hanged Letters', Arial, sans-serif;
+    font-size: 24px;
+    color: green;
+    margin-bottom: 10px;
+}
+.sale-banner p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sale-banner img {
+    width: 150px;
+    height: auto;
+}
