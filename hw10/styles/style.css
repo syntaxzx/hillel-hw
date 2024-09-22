@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul.menu > li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul.menu > li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 5px 0;
+    position: relative;
+}
+
+
+nav ul.menu > li a:hover {
+    color: #333;
+}
+
+nav ul.menu > li:hover a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #57C78A; 
+}
+
+
+nav ul.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e0f7da; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+nav ul.menu .dropdown-content li {
+    padding: 10px;
+}
+
+nav ul.menu .dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+nav ul.menu .dropdown-content li a::after {
+    content: none;
+}
+
+
+nav ul.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+nav ul.menu .dropdown-right {
+    position: relative;
+}
+
+nav ul.menu .dropdown-content-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #e0f7da; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+nav ul.menu .dropdown-right:hover .dropdown-content-right {
+    display: block;
+}
+
+button.login-btn {
+    background-color: #57C78A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.shop-now {
+    background-color: #57C78A;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main {
+    text-align: center;
+    padding: 50px;
+}
+
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 800;
+}
+
+h1 .highlight {
+    color: #57C78A;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.intro .plant img {
+    max-width: 400px;
+}
+
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro .text, .intro .plant {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}

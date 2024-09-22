@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background: linear-gradient(90deg, #b2f2bb, #69db7c);
+    padding: 20px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.service-item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.icon {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+
+.garden-icon {
+    background-image: url('../images/garden-care.png');
+}
+
+.renovation-icon {
+    background-image: url('../images/plant-renovation.png');
+}
+
+.watering-icon {
+    background-image: url('../images/watering-garden.png');
+}
+
+
+.newsletter {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #69db7c;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #57c86a;
+}
+
+
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.social-media {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 5px;
+    color: #69db7c;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form label {
+    margin-bottom: 5px;
+}
+
+.registration-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.registration-form button {
+    padding: 10px;
+    background-color: #69db7c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #57c86a;
+}
