@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="scss/style2.css">
+</head>
+<body>
+    <div class="modal">
+        <button class="modal__close-btn" onclick="goToMainPage()">&times;</button>
+        <h1 class="modal__title">We would like to help you</h1>
+        <form class="modal__form">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email">
+            <textarea placeholder="Your message"></textarea>
+            <button class="modal__submit-btn" type="submit">Send message</button>
+        </form>
+    </div>
+    
+    <script>
+        function goToMainPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+    
+</body>
+</html>
