@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HLegal - Your Legal Solutions Provider</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container d-flex justify-content-between align-items-center">
             <div class="header__logo">
                 <img src="images/logo.svg" alt="HLegal Logo">
             </div>
@@ -17,12 +19,12 @@
                     <span>УК РУ EN • Kyiv, Mechnikova str, 14/1 • 0800 211 927 • ⓕ</span>
                 </div>
                 <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#">about us</a></li>
-                        <li class="header__nav-item"><a href="">services</a></li>
-                        <li class="header__nav-item"><a href="team.html">team</a></li>
-                        <li class="header__nav-item"><a href="#">publications</a></li>
-                        <li class="header__nav-item"><a href="contact.html">contact</a></li>
+                    <ul class="header__nav-list nav">
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">about us</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">services</a></li>
+                        <li class="header__nav-item nav-item"><a href="team.html" class="nav-link">team</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">publications</a></li>
+                        <li class="header__nav-item nav-item"><a href="contact.html" class="nav-link">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,165 +34,142 @@
     <section class="hero">
         <div class="hero__background">
             <img src="images/llogo.svg" alt="Hero Logo" class="hero__logo">
-      </section>
-    
-    <section class="features">
-        <div class="features__container">
-            <div class="features__buttons">
+        </div>
+    </section>
+
+    <section class="features py-5">
+        <div class="features__container container">
+            <div class="features__buttons d-flex justify-content-between">
                 <span class="features__item">Consistent</span>
                 <span class="features__item">Customer oriented</span>
                 <span class="features__item">Innovative</span>
                 <span class="features__item">Business oriented</span>
             </div>
-            <div class="features__divider"></div>
+            <div class="features__divider my-4"></div>
             <div class="features__description">
-                <h2 class="features__title">We turn the idea of legal services</h2>
-                <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                <h2 class="features__title text-center">We turn the idea of legal services</h2>
+                <p class="text-center">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
             </div>
         </div>
     </section>
 
-    <section class="services">
-        <div class="services__container">
-            <h2 class="services__title">What can we do better than others?</h2>
-            <div class="services__items">
-                <div class="services__item">
-                    <img src="images/service1.svg" alt="IT and E-commerce">
-                    <h3>IT and e-commerce</h3>
+    <section class="services py-5">
+        <div class="services__container container">
+            <h2 class="services__title text-center mb-5">What can we do better than others?</h2>
+            <div class="services__items row">
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service1.svg" alt="IT and E-commerce" class="img-fluid">
+                    <h3 class="mt-3">IT and e-commerce</h3>
                     <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                 </div>
-                <div class="services__item">
-                    <img src="images/service2.svg" alt="Daily Support">
-                    <h3>Comprehensive daily
-                        legal support</h3>
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service2.svg" alt="Daily Support" class="img-fluid">
+                    <h3 class="mt-3">Comprehensive daily legal support</h3>
                     <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
                 </div>
-                <div class="services__item">
-                    <img src="images/service3.svg" alt="Corporate Relationships">
-                    <h3>Structuring corporate relationships</h3>
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service3.svg" alt="Corporate Relationships" class="img-fluid">
+                    <h3 class="mt-3">Structuring corporate relationships</h3>
                     <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
                 </div>
-                <div class="services__item">
-                    <img src="images/service4.svg" alt="Building contractual relations">
-                    <h3>Building contractual relations</h3>
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service4.svg" alt="Building contractual relations" class="img-fluid">
+                    <h3 class="mt-3">Building contractual relations</h3>
                     <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
                 </div>
-                <div class="services__item">
-                    <img src="images/service5.svg" alt="Protection of business, intellectual property">
-                    <h3>Protection of business, intellectual property</h3>
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service5.svg" alt="Protection of business, intellectual property" class="img-fluid">
+                    <h3 class="mt-3">Protection of business, intellectual property</h3>
                     <p>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
                 </div>
-                <div class="services__item">
-                    <img src="images/service6.svg" alt="Judicial representation">
-                    <h3>Judicial representation</h3>
+                <div class="services__item col-md-4 mb-4">
+                    <img src="images/service6.svg" alt="Judicial representation" class="img-fluid">
+                    <h3 class="mt-3">Judicial representation</h3>
                     <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
-        <div class="about__container">
+
+    <section class="about py-5">
+        <div class="about__container container d-flex align-items-center">
             <div class="about__image">
-                <img src="images/ceo.png" alt="CEO Image">
+                <img src="images/ceo.png" alt="CEO Image" class="img-fluid">
             </div>
-            <div class="about__content">
+            <div class="about__content ml-4">
                 <h2 class="about__title">Команда</h2>
                 <p class="about__description">
                     Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
                 </p>
-                <span class="about__author">Олександр Олександровський </span>
-                <p class="about__author"> Керуючий партнер </p>
+                <span class="about__author">Олександр Олександровський</span>
+                <p class="about__author">Керуючий партнер</p>
             </div>
         </div>
     </section>
-    
-    <section class="trust">
-        <h3 class="trust__title">They Already Trust Us</h3>
-        <div class="trust__logos">
-            <div class="trust__logo">
-                <img src="images/hillel.svg" alt="Hillel">
-            </div>
-            <div class="trust__logo">
-                <img src="images/wannabiz.svg" alt="WannaBiz">
-            </div>
-            <div class="trust__logo">
-                <img src="images/taperine.svg" alt="Tapgerine">
-            </div>
-            <div class="trust__logo">
-                <img src="images/3dlook.svg" alt="3D Look">
-            </div>
-            <div class="trust__logo">
-                <img src="images/orangear.svg" alt="Orangear">
-            </div>
-            <div class="trust__logo">
-                <img src="images/adtelligent.svg" alt="Actelligent">
-            </div>
-            <div class="trust__logo">
-                <img src="images/clickky.svg" alt="Clickky">
-            </div>
-            <div class="trust__logo">
-                <img src="images/eco-leasing.svg" alt="Eco Leasing">
-            </div>
-            <div class="trust__logo">
-                <img src="images/infotek.svg" alt="InfraTek">
-            </div>
-            <div class="trust__logo">
-                <img src="images/sity-park.svg" alt="Siti-Park">
-            </div>
-            <div class="trust__logo">
-                <img src="images/art-print-studio.svg" alt="Art Print Studio">
-            </div>
-            <div class="trust__logo">
-                <img src="images/ultimate-card.svg" alt="Ultimate Card">
-            </div>
+
+    <section class="trust py-5">
+        <h3 class="trust__title text-center mb-4">They Already Trust Us</h3>
+        <div class="trust__logos container d-flex flex-wrap justify-content-around">
+            <div class="trust__logo mb-4"><img src="images/hillel.svg" alt="Hillel"></div>
+            <div class="trust__logo mb-4"><img src="images/wannabiz.svg" alt="WannaBiz"></div>
+            <div class="trust__logo mb-4"><img src="images/taperine.svg" alt="Tapgerine"></div>
+            <div class="trust__logo mb-4"><img src="images/3dlook.svg" alt="3D Look"></div>
+            <div class="trust__logo mb-4"><img src="images/orangear.svg" alt="Orangear"></div>
+            <div class="trust__logo mb-4"><img src="images/adtelligent.svg" alt="Actelligent"></div>
+            <div class="trust__logo mb-4"><img src="images/clickky.svg" alt="Clickky"></div>
+            <div class="trust__logo mb-4"><img src="images/eco-leasing.svg" alt="Eco Leasing"></div>
+            <div class="trust__logo mb-4"><img src="images/infotek.svg" alt="InfraTek"></div>
+            <div class="trust__logo mb-4"><img src="images/sity-park.svg" alt="Siti-Park"></div>
+            <div class="trust__logo mb-4"><img src="images/art-print-studio.svg" alt="Art Print Studio"></div>
+            <div class="trust__logo mb-4"><img src="images/ultimate-card.svg" alt="Ultimate Card"></div>
         </div>
     </section>
-    <section class="publications">
-        <div class="publications__title">
+
+    <section class="publications py-5">
+        <div class="publications__title text-center">
             <a href="#">PUBLICATIONS</a>
         </div>
-        <h2 class="publications__subtitle">We have something to tell</h2>
+        <h2 class="publications__subtitle text-center mb-4">We have something to tell</h2>
     
-        <div class="publications__cards">
-            <div class="publication-card">
-                <img src="images/1.png" alt="Equity associate">
-                <div class="publication-card__info">
-                    <h4>Equity associate</h4>
-                    <div class="publication-card__date">April 22</div>
-                    <p class="publication-card__description">
-                        I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I….
-                    </p>
+        <div class="publications__cards container">
+            <div class="row">
+                <div class="publication-card col-md-4 mb-4">
+                    <img src="images/1.png" alt="Equity associate" class="img-fluid">
+                    <div class="publication-card__info">
+                        <h4>Equity associate</h4>
+                        <div class="publication-card__date">April 22</div>
+                        <p class="publication-card__description">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                    </div>
                 </div>
-            </div>
     
-            <div class="publication-card">
-                <img src="images/2.png" alt="GDPR Penalty">
-                <div class="publication-card__info">
-                    <h4>Penalty for the Good Corporation</h4>
-                    <div class="publication-card__date">September 29</div>
-                    <p class="publication-card__description">
-                        And why the recovery of 50 million euros could be a big precedent.
-                    </p>
+                <div class="publication-card col-md-4 mb-4">
+                    <img src="images/2.png" alt="GDPR Penalty" class="img-fluid">
+                    <div class="publication-card__info">
+                        <h4>Penalty for the Good Corporation</h4>
+                        <div class="publication-card__date">September 29</div>
+                        <p class="publication-card__description">And why the recovery of 50 million euros could be a big precedent.</p>
+                    </div>
                 </div>
-            </div>
     
-            <div class="publication-card">
-                <img src="images/3.png" alt="Millennial Testament">
-                <div class="publication-card__info">
-                    <h4>Millennial Testament</h4>
-                    <div class="publication-card__date">August 19</div>
-                    <p class="publication-card__description">
-                        What and how modern vloggers, opinion leaders will inherit.
-                    </p>
+                <div class="publication-card col-md-4 mb-4">
+                    <img src="images/3.png" alt="Millennial Testament" class="img-fluid">
+                    <div class="publication-card__info">
+                        <h4>Millennial Testament</h4>
+                        <div class="publication-card__date">August 19</div>
+                        <p class="publication-card__description">What and how modern vloggers, opinion leaders will inherit.</p>
+                    </div>
                 </div>
             </div>
         </div>
     
-        <div class="publications__footer">
+        <div class="publications__footer text-center mt-5">
             <span>Kyiv, Mechnykova str, 1a | <a href="#">ON MAP</a></span>
-            <span>&copy; 2021 HLEGAL Law company, LLC</span>
+            <span class="d-block">&copy; 2021 HLEGAL Law company, LLC</span>
         </div>
     </section>
-    
+    >
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

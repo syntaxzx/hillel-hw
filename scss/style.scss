@@ -355,20 +355,22 @@ a {
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 1200px;
 
         .trust__logo {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0;
 
             img {
                 max-width: 100%;
-                height: auto;
-                padding: 0;
+                height: 100%;
                 display: block;
-                width: 100%;
                 object-fit: contain;
+                margin: 0;
+                padding: 0;
             }
         }
     }

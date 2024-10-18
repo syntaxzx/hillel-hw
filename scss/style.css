@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf") format("ttf"), url("../fonts/Montserrat.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   font-family: "Arial", sans-serif;
@@ -308,21 +314,23 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .trust__logos .trust__logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 .trust__logos .trust__logo img {
   max-width: 100%;
-  height: auto;
-  padding: 0;
+  height: 100%;
   display: block;
-  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 1200px) {
   .trust__logos {
