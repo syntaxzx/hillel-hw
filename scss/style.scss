@@ -338,6 +338,15 @@ a {
     }
 }
 
+.about__slider {
+    .slick-slide {
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .trust {
     padding: 20px 0;

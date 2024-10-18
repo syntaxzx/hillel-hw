@@ -258,27 +258,32 @@ a:hover {
   padding: 50px 0;
   background-color: #fff;
 }
+
 .about__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
-.about__image {
-  flex: 1;
-  margin-right: 20px;
+
+.about__slider {
+  flex: 1; 
+  max-width: 400px; 
+  margin-right: 30px; 
 }
-.about__image img {
+
+.about__slider img {
   width: 100%;
-  max-width: 400px;
+  height: auto;
 }
+
 .about__content {
-  flex: 3;
+  flex: 3; 
   padding: 30px;
   background-color: #f0f0f0;
   border-radius: 8px;
 }
+
 .about__title {
   font-size: 15px;
   margin-bottom: 5px;
@@ -286,6 +291,7 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .about__description {
   font-size: 28px;
   font-weight: bolder;
@@ -294,9 +300,21 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about__author {
-  font-style: italic;
-  color: #a5a5a5;
+
+@media (max-width: 600px) {
+  .about__slider {
+    max-width: 100%; 
+    margin-right: 0; 
+  }
+
+  .about__container {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .about__content {
+    padding: 20px;
+  }
 }
 
 .trust {
